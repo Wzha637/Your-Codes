@@ -6,9 +6,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Your Codes</title>
  <link rel="stylesheet" type="text/css" href="index.css">
- <link rel="stylesheet" type="text/css" href="./fontfile/stylesheet.css">
- <link rel="icon" type="image/x-icon" href="./Images/IMG_5625.PNG">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+ <link rel="stylesheet" type="text/css" href="fontfile/stylesheet.css">
+ <link rel="icon" type="image/x-icon" href="Images/IMG_5625.PNG">
  <script defer type="text/javascript" src="index.js"></script>
 </head>
 <body>
@@ -16,42 +15,28 @@
     <h1 class="title_name">YourCode</h1>
     <img class="logo" src="Images/icon.png" width="50px" height="50px">
     <img class="user" src="Images/user.png" onclick="Click('../Front end/Login.html')" width="30px" height="30px">
-    <hr>    
+    <hr>
   <nav>
-    
+
    <div class="navbar">
         <ul class="container gray highlightTextIn">
             <!-- navagation bar -->
             <!--<li><a href="./Login.html"><img id="logo" src="./Images/IMG_5625.PNG" alt="Logo"></a></li>-->
             <li><a alt ="Homepage" href="./homepage.html">Homepage</a></li>
-            <li><a alt = "Problems" href="./Problems-list.html">Problems</a></li>
+            <li><a alt = "Problems" href="Problems-list.html">Problems</a></li>
             <li><a alt="Create" href="./Problem_Create.html">Create</a></li>
-            <li><a alt="Leader Board" href="./Leader-board.html">Leader Board</a></li>
+            <li><a alt="Leader Board" href="Leader-board.html">Leader Board</a></li>
         </ul>
 
-   </div>   
+   </div>
   </nav>
-  
-  <div class="menu">
-    <div class="menu-icon" id="icon">
-        <i class="fa-solid fa-bars" onclick="show()"></i>
-    </div>
-  <nav class="nav-bar">
-    <ul id="menuList">
-        <li><a alt ="Homepage" href="./homepage.html">Homepage</a></li>
-        <li><a alt = "Problems" href="./Problems-list.html">Problems</a></li>
-        <li><a alt="Create" href="./Problem_Create.html">Create</a></li>
-        <li><a alt="Leader Board" href="./Leader-board.html">Leader Board</a></li>
-    </ul>   
-  </nav>
-  </div>
  </header>
 
  <main>
-    <img src="./Images/star.png" alt class="star">
+    <img src="Images/star.png" alt class="star">
   <article>
-   <section> 
-    
+   <section>
+
     <div id="text">
         <div id="text2">
             <h2 id="create">CREATE</h2>
@@ -61,29 +46,60 @@
         </div>
     </div>
     <div id="button">
-        <span onclick="window.location.href='./Login.html';" >GET START</span>
-    </div>  
+        <span onclick="window.location.href='Login.html';" >GET START</span>
+    </div>
    </section>
   </article>
  </main>
-
- <footer>
-    <!--footer of page  -->
-  <section id="footer">
-   <h1>About Us</h1>
-   <br>
-   <p>The members of our team are all third year Computer Science students at the University of Auckland ...</p>
-   <br>
-   <h1 style="margin-top:50px;">Why Create problems yourself?</h1>
-   <br>
-   <img src="./Images/pyramid.png" alt="pyramid">
-   <br>
-   <p>Creating your own questions does work!</p>
-   <br>
-   <h1 style="margin-top:50px;">Contact Us</h1>
-   <br>
-   <p>xxx@aucklanduni.ac.nz <br> xxx@aucklanduni.ac.nz</p>
-  </section>
- </footer>
+ <div class="card-container">
+    <div class="card card-1">
+        <div class="card-header" id="problems">
+            Problems
+        </div>
+        <div class="card-body">
+            <p>Over hundreds of questions ready to be solved, and daily updates on new exercises created. We also support the most popular languages Python, Java, and C. Practicing your problem solving skills with Your Code exercies and prepare for your interviews.</p>
+        </div>
+        <div class="card-button">
+            <a href="./Problems-list.html">View Problems</a>
+        </div>
+    </div>
+    <div class="card card-2">
+        <div class="card-header" id="create-card">
+            Create
+        </div>
+        <div class="card-body">
+            <p>Challenge others with your own exerciese. Your Code provides the platform for you to create your unique questions, where you can practice your creativity and knowledge against other students. Questions can vary in many different tags and topics, covering everything that a novice user may need. </p>
+        </div>
+        <div class="card-button">
+            <a href="./Problem_Create.html">Create now</a>
+        </div>
+    </div>
+    <div class="card card-3">
+        <div class="card-header" id="leader-board">
+            Leader Board
+        </div>
+        <div class="card-body">
+            <p>By creating and solving question you are competing aginst other users. There are three leader boards covering the best question created, top solutions, and top solver. You can compete by having the most ratings on the questions you create, solve, or having the most questions solved. </p>
+        </div>
+        <div class="card-button">
+            <a href="./Leader-board.html">View Leader Board</a>
+        </div>
+    </div>
+    <div class="card card-4">
+        <div class="card-header" id="about-us">
+            About Us
+        </div>
+        <div class="card-body">
+            <p>We are a small group of passionate developers from University of Auckland, and we want to help those who are experiencing the same difficulty we once did as a novice programmer.</p>
+            <h4>Contact us:</h4>
+            <p>Email: yourCodes28@gmail.com</p>
+            <p>phone: 021-123123</p>
+        </div>
+        <div class="card-button">
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+ </div>
+ 
 </body>
 </html>

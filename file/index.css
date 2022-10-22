@@ -49,7 +49,6 @@ body {
 font-family: 'Open Sans',Arial,sans-serif;
  margin: 0;
  padding: 0;
- min-height: 3000px;
  background-color: #f8f8f8;
 }
 
@@ -235,7 +234,6 @@ ul li a::after{
 /* footer at bottom of page */
 #footer {
     text-align: center;
-    transform: translateY(-300px);
    }
 #footer p{
     color:#000000;
@@ -372,6 +370,12 @@ div#profile img {
 }
 
 
+
+
+
+
+
+
 div#profile a:hover {
  background-color: #000000;
  transition: all 0.5s;
@@ -403,81 +407,64 @@ div#profile a:hover {
  transition: all 0.5s;
 }
 
-/*footer text style*/
-#footer h1{
-    text-transform: uppercase;
-}
-#footer p{
-    font-size:15px;
-    margin-top:10px;
-    letter-spacing: 3px;
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
 }
 
-.nav-bar {
-    display: none;
-    position: absolute;
-}
-
-.nav-bar ul li a {
-    font-size: 20px;
-    color: white;
+.card {
+    width: 400px;
+    margin: 15px 30px;
     border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.15);
+    display: block;
+    width: 90%;
+    margin-top: 20px;
 }
 
-.nav-bar ul li a:hover {
-    color: #30a379;
+.card-header {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-left: 5px;
+.card-body {
+    line-height: 1.5;
+    font-size: 1.2em;
+    padding: 15px;
+    background-color: #fafafa;
 }
 
-/* iphone 12 pro screen size */
-@media only screen and (max-width:391px) {
-    #title2 {
-        font-size: 45px;
-    }
-
-    footer img{
-        width: 90%;
-    }
-
-    #welcome-p {
-        display: none;
-    }
-
-    .nav-bar {
-        display: block;
-    }
-
-    .nav-bar ul li {
-        background-color:#3b423f;
-        display: flex;
-        align-items: center;
-        transform: translateY(-20px);
-    }
-
-    #menuList {
-        display: none;
-    }
-
-    .menu-icon {
-        cursor: pointer;
-        display: block;
-    }
-
-    .navbar {
-        display: none;
-    }
-
+#problems {
+    color: rgb(252, 171, 10);
 }
 
-/* ipad air screen size */
-@media only screen and (max-width:821px) {
-    .navbar ul li a {
-        font-size: 30px;
-    }
+#leader-board {
+    color: rgb(26, 197, 26);
+}
+
+#create-card {
+    color: rgb(228, 16, 16);
+}
+
+#about-us {
+    color: rgb(44, 29, 247);
+}
+
+.card-button {
+    float: right;
+    margin-right: 5px;
+}
+
+.card-button a {
+    color: rgb(33, 165, 194);
+    font-size: 18px;
+}
+
+.card-button a:hover {
+    color: rgb(26, 105, 123);
 }
