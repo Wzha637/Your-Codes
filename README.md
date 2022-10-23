@@ -9,3 +9,6 @@ Your Codes is an online proogramming website, where users can solve question cre
 1. HTML5
 2. CSS3
 3. Javascript
+
+## Run
+Use VS code to run the web pages.
