@@ -468,3 +468,50 @@ div#profile a:hover {
 .card-button a:hover {
     color: rgb(26, 105, 123);
 }
+
+/* iphone 12 pro screen size */
+@media only screen and (max-width:391px) {
+    #title2 {
+        font-size: 45px;
+    }
+
+    footer img{
+        width: 90%;
+    }
+
+    #welcome-p {
+        display: none;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-bar ul li {
+        background-color:#3b423f;
+        display: flex;
+        align-items: center;
+        transform: translateY(-20px);
+    }
+
+    #menuList {
+        display: none;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+}
+
+/* ipad air screen size */
+@media only screen and (max-width:821px) {
+    .navbar ul li a {
+        font-size: 30px;
+    }
+}
